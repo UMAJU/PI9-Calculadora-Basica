@@ -1,0 +1,62 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+main(){
+  	int oper;
+	  double r,a,b;
+	  char res;
+	
+	do{
+		  system("cls");
+      cout<<"1) Suma"<<endl;
+      cout<<"2) Resta"<<endl;
+      cout<<"3) Multiplicacion"<<endl;
+      cout<<"4) Division"<<endl;
+      cout<<"\nSeleccione operacion: ";
+      cin>>oper;
+		
+      cout<<"\nPrimer numero: ";
+      cin>>a;
+      cout<<"\nSegundo numero: ";
+      cin>>b;
+	
+		
+		switch(oper){
+        case 1:
+          r=a+b;
+          cout<<"\n Resultado de la operacion: "<<r<<endl;
+        break;
+        case 2:
+          r=a-b;
+          cout<<"\n Resultado de la operacion: "<<r<<endl;
+        break;
+        case 3:
+          r=a*b;
+          cout<<"\n Resultado de la operacion: "<<r<<endl;
+        break;
+        case 4: 
+
+        if(b != 0){
+
+
+            r=a/b;
+            cout<<"\n Resultado de la operacion: "<<r<<endl;
+        }
+        else{
+          cout<<"No se puede dividir entre 0";
+        }		
+          break;
+          default:
+          cout<<"\n No existe operacion"<<endl;						
+        }
+
+        cout<<"\n Desea repetir el proceso? s/n :";
+        cin>>res;
+
+      }while (res=='s');
+
+
+          getch();	
+      }
